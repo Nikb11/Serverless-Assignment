@@ -4,7 +4,7 @@ import boto3
 from datetime import datetime, timedelta
 
 def lambda_handler(event, context):
-    bucket_name = 'nikhilb3'
+    bucket_name = 'nikhil-buckets3'
     s3 = boto3.client('s3', region_name='us-east-1')
 
     current_date = datetime.now() 
