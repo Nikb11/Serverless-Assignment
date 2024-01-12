@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 def lambda_handler(event, context):
     s3_client = boto3.client('s3')
-    bucket_name = 'nikhilb3'
+    bucket_name = 'nikhil-buckets3'
     
     objects = s3_client.list_objects_v2(Bucket=bucket_name)['Contents']
 
